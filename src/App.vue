@@ -39,7 +39,7 @@ function nextSlide() {
 </script>
 
 <template>
-  <div class="md:primary-grid | grid grid-cols-1 h-screen">
+  <main class="md:primary-grid | grid grid-cols-1 h-screen">
     <!-- First row -->
     <div class="relative md:row-span-2 md:col-span-2 md:h-auto h-[22.5rem]">
       <Header></Header>
@@ -74,5 +74,5 @@ function nextSlide() {
     <div>
       <img class="w-full h-full object-cover" src="/image-about-light.jpg" alt="" />
     </div>
-  </div>
+  </main>
 </template>
