@@ -39,9 +39,9 @@ function nextSlide() {
 </script>
 
 <template>
-  <div class="md:primary-grid | grid h-screen">
+  <div class="md:primary-grid | grid grid-cols-1 h-screen">
     <!-- First row -->
-    <div class="row-span-2 col-span-2 relative md:h-auto h-[22.5rem]">
+    <div class="relative md:row-span-2 md:col-span-2 md:h-auto h-[22.5rem]">
       <Header></Header>
       <Carousel :image="slide.image"></Carousel>
       <div class="md:hidden absolute bottom-0 right-0">
@@ -51,18 +51,18 @@ function nextSlide() {
 
     <Heading :title="slide.title" :description="slide.description"></Heading>
 
-    <Controls :handle-previous="previousSlide" :handle-next="nextSlide"></Controls>
+    <Controls class="md:flex hidden" :handle-previous="previousSlide" :handle-next="nextSlide"></Controls>
 
     <!-- To fill the remaining row space -->
-    <div></div>
+    <div class="md:block hidden"></div>
 
     <!-- Second row -->
     <div>
       <img class="w-full h-full object-cover" src="/image-about-dark.jpg" alt="" />
     </div>
 
-    <section class="col-span-2 pt-16 px-12">
-      <h2 class="mb-2 uppercase tracking-[0.3em] text-lg font-bold text-black">About our furniture</h2>
+    <section class="md:col-span-2 md:pt-16 md:pb-0 py-12 md:px-12 px-8">
+      <h2 class="mb-2 uppercase tracking-[0.3em] md:text-lg text-normal font-bold text-black">About our furniture</h2>
       <p class="tracking-tight leading-snug">
         Our multifunctional collection blends design and function to suit your individual taste. Make each room unique,
         or pick a cohesive theme that best express your interests and what inspires you. Find the furniture pieces you
