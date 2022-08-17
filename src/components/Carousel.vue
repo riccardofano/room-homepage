@@ -2,8 +2,9 @@
 const { image } = defineProps(["image"]);
 
 function getImageUrl(image, size) {
-  return new URL(`/${size}-${image}`, import.meta.url).href;
+  return new URL(`../assets/${size}-${image}`, import.meta.url).href;
 }
+console.log(image);
 </script>
 
 <template>
