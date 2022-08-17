@@ -41,9 +41,12 @@ function nextSlide() {
 <template>
   <div class="md:primary-grid | grid h-screen">
     <!-- First row -->
-    <div class="row-span-2 col-span-2 relative">
-      <Carousel :image="slide.image"></Carousel>
+    <div class="row-span-2 col-span-2 relative md:h-auto h-[22.5rem]">
       <Header></Header>
+      <Carousel :image="slide.image"></Carousel>
+      <div class="md:hidden absolute bottom-0 right-0">
+        <Controls :handle-previous="previousSlide" :handle-next="nextSlide" :small="true"></Controls>
+      </div>
     </div>
 
     <Heading :title="slide.title" :description="slide.description"></Heading>

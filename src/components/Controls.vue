@@ -1,5 +1,5 @@
 <script setup>
-const { handlePrevious, handleNext } = defineProps(["handlePrevious", "handleNext"]);
+const { handlePrevious, handleNext, small } = defineProps(["handlePrevious", "handleNext", "small"]);
 </script>
 
 <template>
@@ -15,6 +15,10 @@ const { handlePrevious, handleNext } = defineProps(["handlePrevious", "handleNex
 
 <style scoped>
 .button {
-  @apply w-20 h-20 flex items-center justify-center bg-black hover:opacity-70 active:opacity-40;
+  @apply md:w-20 md:h-20 w-14 h-14 flex items-center justify-center bg-black hover:opacity-70 active:opacity-40;
+}
+
+.button > img {
+  @apply scale-75 origin-center;
 }
 </style>
