@@ -19,6 +19,6 @@ const { handlePrevious, handleNext, small } = defineProps(["handlePrevious", "ha
 }
 
 .button > img {
-  @apply scale-75 origin-center;
+  @apply md:scale-100 scale-75 origin-center;
 }
 </style>

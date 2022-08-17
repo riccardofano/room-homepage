@@ -5,7 +5,7 @@ const open = ref(false);
 
 <template>
   <header
-    class="py-12 md:px-16 px-8 flex gap-12 items-center md:justify-start justify-center text-white drop-shadow-md"
+    class="py-14 md:px-16 px-8 flex gap-[3.35rem] items-center md:justify-start justify-center text-white drop-shadow-md"
   >
     <p class="text-bold text-3xl leading-none">room</p>
     <Transition name="appear" mode="in-out">
@@ -32,7 +32,7 @@ const open = ref(false);
         </button>
 
         <nav class="md:block md:text-white text-black" :class="open ? 'block' : 'hidden'">
-          <ul class="flex gap-4">
+          <ul class="flex gap-8 tracking-tight">
             <li class="bb"><a class="block" href="#">home</a></li>
             <li class="bb"><a class="block" href="#">shop</a></li>
             <li class="bb"><a class="block" href="#">about</a></li>
