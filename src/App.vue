@@ -1,17 +1,9 @@
-<script setup></script>
+<script setup>
+import Header from "./components/Header.vue";
+</script>
 
 <template>
-  <header>
-    <p>room</p>
-    <nav>
-      <ul class="flex">
-        <li>home</li>
-        <li>shop</li>
-        <li>about</li>
-        <li>contact</li>
-      </ul>
-    </nav>
-  </header>
+  <Header />
 </template>
 
 <style scoped></style>
