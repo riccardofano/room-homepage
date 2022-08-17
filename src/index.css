@@ -25,5 +25,13 @@
 
   body {
     margin: 0;
+    color: hsl(0, 0%, 63%);
+  }
+}
+
+@layer components {
+  .primary-grid {
+    grid-template-columns: 1fr 1fr 160px 1.04fr;
+    grid-template-rows: 56.75fr 80px 33.75fr;
   }
 }

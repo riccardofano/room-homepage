@@ -1,5 +1,5 @@
 <template>
-  <header class="flex gap-12 items-center text-white drop-shadow-md">
+  <header class="py-12 px-16 flex gap-12 items-center text-white drop-shadow-md">
     <p class="text-bold text-3xl">room</p>
     <nav>
       <ul class="flex gap-4">
